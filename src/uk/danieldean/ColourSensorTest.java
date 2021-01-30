@@ -32,7 +32,7 @@ public class ColourSensorTest {
         RED (0, "Red"),
         GREEN (1, "Green"),
         BLUE (2, "Blue"),
-        YELLO (3, "Yellow"),
+        YELLOW (3, "Yellow"),
         MAGNETA (4, "Magneta"),
         ORANGE (5, "Orange"),
         WHITE (6, "White"),
