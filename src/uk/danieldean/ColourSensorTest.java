@@ -15,8 +15,10 @@ public class ColourSensorTest {
         while(Button.ENTER.isUp()) {
             Color c = cs.getColor();
             LCD.clear();
-            LCD.drawString("Red: " + c.getRed() + "\nGreen: " + c.getGreen() + "\nBlue: " + c.getBlue() + "\nColour: " +
-                    Colour.getColourName(c.getColor()), 0, 0);
+            LCD.drawString("Red: " + c.getRed() + "\n"
+                    + "Green: " + c.getGreen() + "\n"
+                    + "Blue: " + c.getBlue() + "\n"
+                    + "Colour: " + Colour.getColourName(c.getColor()), 0, 0);
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
