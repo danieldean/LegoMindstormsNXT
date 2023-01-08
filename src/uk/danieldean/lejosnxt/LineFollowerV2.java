@@ -1,4 +1,4 @@
-package uk.danieldean;
+package uk.danieldean.lejosnxt;
 
 import lejos.nxt.Button;
 import lejos.nxt.ColorSensor;
