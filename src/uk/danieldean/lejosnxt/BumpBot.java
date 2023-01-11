@@ -24,9 +24,9 @@ public class BumpBot implements FeatureListener, Runnable {
      * the tyre side wall. Robot width will need
      * measurement.
      */
-    private final static double robotWidth = 158;
-    private final static double tyreDiameter = 43.2;
-    private final static double tyreWidth = 22;
+    private final static double ROBOT_WIDTH = 158;
+    private final static double TYRE_DIAMETER = 43.2;
+    private final static double TYRE_WIDTH = 22;
 
     private final Object lock = new Object();
     private Boolean objectDetected = false;
@@ -45,7 +45,7 @@ public class BumpBot implements FeatureListener, Runnable {
         LCD.clear();
 
         // Initialise based on robot measurements and start.
-        BumpBot bb = new BumpBot(robotWidth, tyreDiameter, tyreWidth);
+        BumpBot bb = new BumpBot(ROBOT_WIDTH, TYRE_DIAMETER, TYRE_WIDTH);
         Thread th = new Thread(bb);
         th.start();
 
