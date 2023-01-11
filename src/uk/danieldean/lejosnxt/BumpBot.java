@@ -100,7 +100,7 @@ public class BumpBot implements FeatureListener, Runnable {
             } else {
 
                 // Stop forward drive.
-                rightMotor.stop();
+                rightMotor.stop(true);
                 leftMotor.stop();
 
                 // Reverse robots width.
